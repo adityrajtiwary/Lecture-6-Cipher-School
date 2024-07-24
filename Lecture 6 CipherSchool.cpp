@@ -1,120 +1,108 @@
-//Today we have learn about conditional statement like: if, if-else, if-else_if-else 
+// Today we are going to learn about the conditional statment  where we are going to learn also about If ELse, Switch case in C++
 
-//we will first going to use the if statement and see why we need to use the if statement in c++ and how does it affect our program 
-//#include<iostream>
-//using namespace std;
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+//	float a,b;
+//	cout<<"Give 2 floating point number as input: "<<endl;
+//	cin>>a>>b;
 //
-//int main()
-//{
-//	float a;
-//	cout<<"Enter a: ";
-//	cin>>a;
-//	
 //	if(a>0.01)
 //	{
-//		cout<<"if statement is true: ";
+//		cout<<"THe condition in if statement is correct"; // it will execute only when the if statment is going to correct	
 //	}
-//	return 0;
-//}
-
-//In the above program we have created a variable using the data type float and trying to used it inside the if statment 
-//where we are checking does the condition match the way we serve it if yes execute the code present inside the curly bracket.
-// so whenever our if condition gets executed we are going to see the output : if statement is true
-
-// Now we are going to see the example of if-else
-
-//#include<iostream>
-//using namespace std;
 //
-//int main()
-//{
-//	float a;
-//	
-//	cout<<"enter the value of a: ";
-//	cin>>a;
-//	
-//	if(a>0.01)
+//	if(a>0.01 && b>a)
 //	{
-//		cout<<"if executed: ";
+//		cout<<"the condition in if statement is correct: "; // will only going to printed when both the statment is going to correct
+//	
+//	}
+//
+//	if(a>0.01 || b>a)
+//	{
+//		cout<<"the condition in if statement is correct: "; // will only going to printed when one of the statment is going to correct
+//	
+//	}
+//	
+//	if(a>0.01 || b>a)
+//	{
+//		cout<<"the condition in if statement is correct: "; // will only going to printed when one of the statment is going to correct
+//	
 //	}
 //	else{
-//		cout<<"else executed";
+//		cout<<"The condition is false";
 //	}
-//	return 0;
-//}
-
-// Here in the above program we can see we have created a variable where we are using the if-else condition so in any case if is going to get false 
-// else is going to be executed
-
-
-// Now we are going to see the example of using if, else-if, else:
-
-//#include<iostream>
-//using namespace std;
-//
-//
-//int main()
-//{
-//	int percentage;
-//	cout<<"Enter percentage to get your grade: ";
-//	cin>>percentage;
 //	
-//	if(percentage>=90)
+//	// Here we are going to check the grade based upon the marks the students get
+//	int marks;
+//	cout<<"students, please enter the marks to calculate the grade: ";
+//	
+//	if( marks>90)
 //	{
 //		cout<<"A";
 //	}
-//	else if(percentage>=80)
+//	else if(marks>80)
 //	{
 //		cout<<"B";
 //	}
-//	else if(percentage>=70)
+//	else if (marks>70)
 //	{
 //		cout<<"C";
 //	}
-//	else if(percentage>=60)
-//	{
-//		cout<<"D";
-//	}
 //	else{
-//		cout<<"E";
+//		cout<<"Pass";
 //	}
 //	
-//	return 0;
-//}
+// Till now we have learned about three types of conditional statment if, if else, if else-if else.
 
-// Now we are going to see the example of switch statement , it also comes under conditional statement and are use for creating multiple if else cases 
-// for creating the switch statement we just need to use switch word
-
-//#include<iostream>
-//using namespace std;
+//	int a, b, c,d;
 //
-//int main()
-//{
+//	cout<<"Give inputs of four integer: ";
+//	cin>>a>>b>>c>>d;
+//
+//	if(a>b && c>d)
+//	{
+//		cout<<"haha";
+//	}
+//	else if(a>b && c<d)
+//	{
+//		cout<<"hehe";
+//	}
+//	else 
+//	{
+//		cout<<"huhu";
+//	}
+	
+// Now we are going to see the switch case conditional statment 
 //
 //	int a;
-//	cout<<"enter the value of a: ";
+//	cout<<"enter the integer a: ";
 //	cin>>a;
-//	
+//
 //	switch(a)
 //	{
-//		case 1:
-//		{
-//			cout<<"Value of a is 1: ";
+//		case 1:{
+//			cout<<"The value of a is 1";
 //			break;
-//		 }
+//		}
 //		case 2:{
-//			cout<<"Value of a is 2: ";
+//			cout<<"The value of a is 2";
 //			break;
 //		}
-//		default:{
-//			cout<<"Wrong input: ";
+//		case 3:{
+//			cout<<"The value of a is 3";
 //			break;
 //		}
-//		 
+//		default{
+//			cout<<"default will always going to be printed : ";
+//			break;
+//		}
 //	}
-//	
-//	return 0;
+
+
+return 0;	
 }
-// In the above program we can see that we have initialized variable name a: and using the switch we put the variable inside the parenthesis
-// we can see if the value of a = 1 , case 1: and it's content present inside is going to be executed
-// and by any chance a has a value which doesn't satisfy the any case then automatically default statement is going to be executed 
+
